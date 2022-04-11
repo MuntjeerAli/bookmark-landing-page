@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+<link rel="stylesheet" href="./style/styles.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -30,9 +30,9 @@
     </div>
     <div class="nav-list">
       <ul>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
+        <li> <a href="#features" class="list"> Features </a></li>
+        <li> <a href="#pricing" class="list"> Pricing </a></li>
+        <li> <a href="#contact" class="list"> Contact </a></li>
       </ul>
       <button class="btn btn-login">Login</button>
     </div>
@@ -47,8 +47,10 @@
           A clean and simple interface to organize your favourite websites. Open a new
           browser tab and see your sites load instantly. Try it for free.
         </p>
-        <button class="btn btn-chrome"> Get it on Chrome</button>
-        <button class="btn btn-firefox"> Get it on Firefox</button>
+        <div class="get-it">
+          <button class="btn btn-chrome"> Get it on Chrome</button>
+          <button class="btn btn-firefox"> Get it on Firefox</button>
+        </div>
       </div>
       <div class="sec-1-img">
         <img src="./images/illustration-hero.svg" alt="hero-img">
@@ -65,7 +67,7 @@
           can access them on the go.
         </p>
       </div>
-      <ul>
+      <ul class="options">
         <li class="option">Simple Bookmarking</li>
         <li class="option">Speedy Searching</li>
         <li class="option">Easy Sharing</li>
@@ -88,7 +90,7 @@
       </div>
     </section>
     <section class="sec-3">
-      <div class="sec-4-text">
+      <div class="sec-3-text">
         <h2>
           Download the extension
         </h2>
@@ -98,50 +100,64 @@
         </p>
       </div>
       <div class="cards">
-        <div class="card">
+        <div class="card card-1">
           <img src="./images/logo-chrome.svg" alt="chrome-logo">
-        </div>
-        <div class="card-text">
-          <h3>
-            Add to Chrome
-          </h3>
-          <p>
-            Minimum version 62
-          </p>
-          <img src="./images/bg-dots.svg" alt="bg-dots">
-          <button class="btn btn-cards">
-            Add & Install Extension
-          </button>
-        </div>
-        <div class="card">
-          <img src="./images/logo-firefox.svg" alt="firefox-logo">
-        </div>
-        <div class="card-text">
-          <h3>
-            Add to Firefox
-          </h3>
-          <p>
-            Minimum version 55
-          </p>
-          <img src="./images/bg-dots.svg" alt="bg-dots">
-          <button class="btn btn-cards">
-            Add & Install Extension
-          </button>
-          <div class="card">
-            <img src="./images/logo-opera.svg" alt="opera-logo">
+          <div class="card-text">
+            <h3>
+              Add to Chrome
+            </h3>
+            <p>
+              Minimum version 62
+            </p>
+            <div class="img-dots">
+              <img src="./images/bg-dots.svg" alt="bg-dots">
+            </div>
+            <div class="card-btn">
+              <button class="btn btn-cards">
+                Add & Install Extension
+              </button>
+            </div>
           </div>
+        </div>
+        <div class="card card-2">
+          <img src="./images/logo-firefox.svg" alt="firefox-logo">
+          <div class="card-text">
+            <h3>
+              Add to Firefox
+            </h3>
+            <p>
+              Minimum version 62
+            </p>
+            <div class="img-dots">
+              <img src="./images/bg-dots.svg" alt="bg-dots">
+            </div>
+            <div class="card-btn">
+              <button class="btn btn-cards">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-3">
+          <img src="./images/logo-opera.svg" alt="opera-logo">
           <div class="card-text">
             <h3>
               Add to Opera
             </h3>
             <p>
-              Minimum version 46
+              Minimum version 62
             </p>
-            <img src="./images/bg-dots.svg" alt="bg-dots">
-            <button class="btn btn-cards">
-              Add & Install Extension
-            </button>
+            <div class="img-dots">
+              <img src="./images/bg-dots.svg" alt="bg-dots">
+            </div>
+            <div class="card-btn">
+              <button class="btn btn-cards">
+                Add & Install Extension
+              </button>
+            </div>
           </div>
+        </div>
+      </div>     
     </section>
     <section class="sec-4">
       <div class="section-text">

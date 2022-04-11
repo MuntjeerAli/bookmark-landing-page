@@ -16,6 +16,246 @@
     box-sizing: border-box;
 }
 
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
 body{
     font-family: 'Rubik', sans-serif;
+}
+
+
+.btn {
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    max-width: max-content;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 6rem;
+    justify-content: space-between;
+}
+header .nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+header ul{
+    list-style-type: none;
+    margin-left: 2rem;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    gap: 3rem;
+    text-transform: capitalize;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.list{
+    text-decoration: none;
+    font-size: 1rem;
+    
+    color: var(--very-dark-blue);
+    transition: 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.btn-login{
+    background-color: var(--soft-red);
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-login:hover {
+    background-color: white;
+    color: var(--soft-red);
+    border-color: var(--soft-red);
+}
+
+main .sec-1{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0 3rem 7rem;
+}
+
+.sec-1 .descp-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-1 .descp-1 h1{
+    font-weight: 500;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.sec-1 .descp-1 p{
+    color: var(--grayish-blue);
+    margin: 1.5rem 0;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.sec-1 .descp-1 .get-it{
+    display: flex;
+    gap: 1rem;
+}
+
+.get-it .btn-chrome{
+    background-color: var(--soft-blue);
+    color: white;
+}
+
+.sec-1-img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.sec-1-img img{
+    width: 100%;
+    height: auto;
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 3rem 7rem;
+}
+
+.sec-2 .section-text{
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec-2 .section-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.sec-2 .section-text p{
+    color: var(--grayish-blue);
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid rgba(144, 147, 161, 0.3);
+    list-style: none;
+    max-width: 40rem;
+    text-align: center;
+    width: 55%;
+    margin: 2.8rem auto 7rem auto;
+}
+
+.options .option{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+}
+
+.sec-2 .click-change{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.sec-2 .click-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-2 .click-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.sec-2 .click-text p{
+    color: var(--grayish-blue);
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.sec-2 .click-text .btn-more-info{
+    background-color: var(--soft-blue);
+    color: white;
+}
+
+.sec-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-3 .sec-3-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+    max-width: 40rem;
+    text-align: center;
+    width: 55%;
+    margin: 8rem auto 2rem auto;
+}
+
+.sec-3 .sec-3-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.sec-3 .sec-3-text p{
+    color: var(--grayish-blue);
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.sec-3 .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sec-3 .cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 10px 0px rgba(0 0 0 / 10%);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    position: relative;
 }
