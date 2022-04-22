@@ -246,6 +246,8 @@ main .sec-1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100vh;
+    width: 100%;
 }
 
 .sec-3 .cards .card{
@@ -258,4 +260,56 @@ main .sec-1{
     padding: 3rem 2rem;
     border-radius: 1rem;
     position: relative;
+    height: 20rem;
+    width: 16rem;
+}
+
+.sec-3 .cards .card-1{
+    top: 0;
+}
+
+.sec-3 .cards .card-2{
+    top: 3rem;
+}
+
+.sec-3 .cards .card-3{
+    top: 5rem;
+}
+
+.sec-4 .section-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+    max-width: 40rem;
+    text-align: center;
+    width: 45%;
+    margin: 8rem auto 2rem auto;
+}
+
+
+.sec-4 .section-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.sec-4 .section-text p{
+    color: var(--grayish-blue);
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.sec-4 .faqs{
+    padding: 0 22rem;
+    width: 100%;
+}
+
+.sec-4 .faqs-content .question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-weight: 400;
 }
